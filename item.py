@@ -70,6 +70,23 @@ class Item:
         else:
             return False
 
+    def __connect(self,smpt_server):
+        pass
+
+    def __prepare_body(self):
+        return f"""
+        Hello Someone
+        We have {self.name} {self.quantity} times.
+        Regards, Mani
+        """
+
+    def __send(self):
+        pass
+
+    def send_email(self):
+        self.__connect("")
+        self.__prepare_body()
+        self.__send()
     # @property
     # def read_only_name(self):
     #     return "AA"
